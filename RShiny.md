@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "RShiny"
-permalink: /RShiny/
+title: "RShiny apps"
+permalink: /rshiny/
 ---
 
 # ASX20 performance

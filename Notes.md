@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Notes"
-permalink: /Notes/
+permalink: /notes/
 ---
 
 # Anaconda setup
