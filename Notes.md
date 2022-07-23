@@ -6,7 +6,7 @@ permalink: /Notes/
 
 **Anaconda setup**
 
-{% highlight python %}
+{% highlight shell %}
 conda create --name ENVNAME python=3.8
 conda activate ENVNAME
 conda deactivate
