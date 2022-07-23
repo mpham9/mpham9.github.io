@@ -33,5 +33,14 @@ conda install spyder
 
 ---
 
+# R
+
+Install packages if not available
+```R
+pkg="dplyr"; if (!require(pkg,character.only=TRUE)) install.packages(pkg)
+library(pkg,character.only=TRUE)
+```
+
+---
 
 
