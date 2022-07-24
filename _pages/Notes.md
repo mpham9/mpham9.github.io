@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Notes"
+title: "My notes"
 permalink: /notes/
 ---
 
