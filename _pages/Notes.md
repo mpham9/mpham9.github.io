@@ -2,6 +2,7 @@
 layout: page
 title: "My notes"
 permalink: /notes/
+published: false
 ---
 
 # Anaconda setup
