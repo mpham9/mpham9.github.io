@@ -40,7 +40,14 @@ Install packages if not available
 pkg="dplyr"; if (!require(pkg,character.only=TRUE)) install.packages(pkg)
 library(pkg,character.only=TRUE)
 ```
+Matrix to vector
+```R
+# sort by column
+vector = c(matrix)
 
+# sort by row
+vector = c(t(matrix))
+```
 ---
 
 
