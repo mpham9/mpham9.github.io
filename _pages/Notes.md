@@ -48,11 +48,13 @@ vector = c(matrix)
 # sort by row
 vector = c(t(matrix))
 ```
-Create lower or upper matrix
+Create lower or upper triangular matrix
 ```R
 m = matrix(1:20,4,5)
-m_low = m[upper.tri(m)] = 0
-m_up = m[lower.tri(m)] = 0
+# make lower triangular matrix
+m[upper.tri(m)] = 0
+# make upper triangular matrix
+m[lower.tri(m)] = 0
 ```
 ---
 
