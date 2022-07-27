@@ -45,9 +45,14 @@ Matrix to vector
 ```R
 # sort by column
 vector = c(matrix)
-
 # sort by row
 vector = c(t(matrix))
+```
+Create lower or upper matrix
+```R
+m = matrix(1:20,4,5)
+m_low = m[upper.tri(m)] = 0
+m_up = m[lower.tri(m)] = 0
 ```
 ---
 
