@@ -56,6 +56,12 @@ m[upper.tri(m)] = 0
 # make upper triangular matrix
 m[lower.tri(m)] = 0
 ```
+
+Load csv
+```R
+df = read.csv("filename.csv",fileEncoding = 'UTF-8-BOM')
+```
+
 ---
 
 
