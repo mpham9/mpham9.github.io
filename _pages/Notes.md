@@ -89,6 +89,14 @@ end_time = Sys.time()
 exec_time = end_time - start_time
 ```
 
+Try catch
+```R
+t = TRUE
+t = tryCatch(
+  {
+  ...
+  }, error = function(e) FALSE)
+```
 
 ---
 
