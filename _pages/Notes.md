@@ -41,6 +41,7 @@ Install packages if not available
 pkg="dplyr"; if (!require(pkg,character.only=TRUE)) install.packages(pkg)
 library(pkg,character.only=TRUE)
 ```
+
 Matrix to vector
 ```R
 # sort by column
@@ -48,6 +49,7 @@ vector = c(matrix)
 # sort by row
 vector = c(t(matrix))
 ```
+
 Create lower or upper triangular matrix
 ```R
 m = matrix(1:20,4,5)
@@ -57,10 +59,36 @@ m[upper.tri(m)] = 0
 m[lower.tri(m)] = 0
 ```
 
-Load csv
+Load data
 ```R
 df = read.csv("filename.csv",fileEncoding = 'UTF-8-BOM')
 ```
+```R
+library(openxlsx)
+df  = read.xlsx(filename,sheet=1)
+```
+
+Parallel computing
+```R
+library(foreach)
+library(doParallel)
+library(parallel)
+numCores = detectCores()
+cl = makeCluster(numCores-2)
+registerDoParallel(cl)
+res = foreach (i = 1:n, .packages = c("stringr","dplyr"), .combine = rbind) %dopar% {
+  c(a,b,c,d)
+}
+stopCluster(cl)
+```
+
+Measure runtime
+```R
+start_time = Sys.time()
+end_time = Sys.time()
+exec_time = end_time - start_time
+```
+
 
 ---
 
