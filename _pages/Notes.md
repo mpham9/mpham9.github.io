@@ -100,4 +100,43 @@ t = tryCatch(
 
 ---
 
+# Paper
+
+Probability of a spike on a given day 9% in VIC, 5% in NSW
+
+https://doi.org/10.1515/snde-2012-0001
+https://doi.org/10.1111/1540-6261.00463
+https://doi.org/10.1016/j.jbankfin.2007.04.011
+
+https://doi.org/10.1016/j.eneco.2008.04.006
+https://doi.org/10.1016/j.eneco.2021.105260
+
+the probability of spike occurrence increases when temperature deviates substantially from mean temperature levels.
+https://doi.org/10.1016/j.eneco.2008.05.007
+
+https://doi.org/10.1016/j.energy.2022.123417
+https://doi.org/10.1111/j.1540-6261.1997.tb02721.x
+https://doi.org/10.1080/10168730000000017
+https://doi.org/10.1016/j.enpol.2014.10.016
+
+simple OLS hedge, conditional hedges, minimum variance hedge ratio, traditional naive hedge, GARCH hedges,
+https://doi.org/10.1080/00036840210138365
+
+
+https://doi.org/10.1016/j.eneco.2008.08.003
+
+bid behavior, vesting and bilateral contracts, generation reserve, gaming attitudes
+https://doi.org/10.2307/2234783
+
+https://ieeexplore.ieee.org/abstract/document/779387
+
+https://doi.org/10.1016/j.eneco.2013.02.006
+
+electricity portfolio optimization
+https://ieeexplore.ieee.org/abstract/document/5712193
+
+cross hedge
+https://doi.org/10.1016/S0140-9883(00)00071-2
+
+https://doi.org/10.1016/j.eneco.2021.105101
 
