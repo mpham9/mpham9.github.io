@@ -98,6 +98,11 @@ t = tryCatch(
   }, error = function(e) FALSE)
 ```
 
+Split text file
+```R
+file.split(fn, size = 50000, same.dir = FALSE, verbose = TRUE, suf = "part", win = TRUE)
+```
+
 ---
 
 # Paper
