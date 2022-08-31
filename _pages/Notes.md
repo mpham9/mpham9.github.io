@@ -13,6 +13,7 @@ conda create --name ENVNAME python=3.8
 conda activate ENVNAME
 conda deactivate
 conda remove --name ENVNAME --all
+conda env remove -n corrupted_env
 ```
 
 Add the channel "conda-forge" to the top of the channel list, making it the highest priority:
