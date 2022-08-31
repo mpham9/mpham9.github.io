@@ -119,3 +119,19 @@ import tabula
 df = tabula.read_pdf('filename.pdf',pages=2)
 df.to_excel('filename_p2.xlsx')
 ```
+
+Extract number using pattern
+```Python
+import re
+filename = "filename.lp"
+regex = '(?<=\\+\\s)[0-9\\.]+(?=\\sConVio_N1_BuildLimit)'
+match_list = []
+with open(filename, "r") as file:
+    for line in file:
+        for match in re.finditer(regex, line):
+            match_text = match.group()
+            match_list.append(match_text)
+            print(line)           
+len([float(i) for i in match_list if float(i) != 0])
+sum([float(i) for i in match_list])
+```
