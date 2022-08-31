@@ -113,3 +113,9 @@ df.insert(loc: 'int', column: 'str|number|hashable', value: 'scalar|serires|arra
 df.insert(5,'Scenario','')
 ```
 
+Extract table from PDF file
+```Python
+import tabula
+df = tabula.read_pdf('filename.pdf',pages=2)
+df.to_excel('filename_p2.xlsx')
+```
