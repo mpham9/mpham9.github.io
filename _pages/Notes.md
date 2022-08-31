@@ -103,6 +103,23 @@ Split text file
 file.split(fn, size = 50000, same.dir = FALSE, verbose = TRUE, suf = "part", win = TRUE)
 ```
 
+Extract number using pattern
+```R
+library(NCmisc)
+library(stringr)
+res = list()
+j = 1
+df = readLines("filename.lp")
+for(i in 1:length(df)){
+  if(str_detect(df[i],"(?<=\\+\\s)[0-9\\.]+(?=\\sConVio_N1_BuildLimit)")){
+    print(df[i])
+    print(str_extract_all(df[i],"(?<=\\+\\s)([0-9\\.]+)(?=\\sConVio_N1_BuildLimit)")[[1]])
+    res1[[j]] = str_extract_all(df[i],"(?<=\\+\\s)([0-9\\.]+)(?=\\sConVio_N1_BuildLimit)")[[1]]
+    j = j+1
+  }
+}
+```
+
 ---
 
 # Python
