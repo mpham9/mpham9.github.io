@@ -33,6 +33,11 @@ conda install conda-forge::PKGNAME
 conda install spyder
 ```
 
+List installed packages in an environment
+```
+conda list
+```
+
 ---
 
 # R
