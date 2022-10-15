@@ -1,4 +1,3 @@
 || R | Python | Matlab
 |--|--|--|--|
-| Change directory | ```R
-setwd("C:/temp")``` |  | |
+| Change directory | <code>R {setwd("C:/temp") }</code> | <code>Python {import os <br> os.chdir("C:\temp")} </code> | |
