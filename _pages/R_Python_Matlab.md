@@ -1,11 +1,10 @@
+
 <table>
   <tr>
     <td> </td>
     <td> R </td>
     <td> Python </td>
-    <td> Matlab </td>
   </tr>
-  
   <tr>
     <td> 
       Change directory 
@@ -20,8 +19,6 @@
       import os
       os.chdir("C:\temp")
       </pre>
-    </td>
-    <td> 
     </td>
   </tr>
 </table>
