@@ -126,6 +126,16 @@ for(i in 1:length(df)){
 }
 ```
 
+Convert HEIC file to pdf
+```R
+library("magick")
+n = dir()
+for (i in 1:length(n)){
+  tmp = image_read(n[i])
+  image_write(tmp,paste0(i,".pdf"),format="pdf")
+}
+```
+
 ---
 
 # Python
