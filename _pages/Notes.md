@@ -168,3 +168,14 @@ with open(filename, "r") as file:
 len([float(i) for i in match_list if float(i) != 0])
 sum([float(i) for i in match_list])
 ```
+
+Exception handling
+```Python
+def log_deriv(x,e):
+  try:
+    return (math.log(x+e)-math.log(x))/e
+  except ValueError:
+    return None
+
+y = log_deriv(-1,0)
+```
