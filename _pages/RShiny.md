@@ -9,7 +9,7 @@ Below are some of my interactive web apps developed in R.
 # ASX20 performance
 
 Employ an iterative mathematical optimization algorithm to evaluate performance of 20 stocks in ASX20.
-- [R Shiny Interactive Web App]({{site.url}}/rshiny/asx20-performance)
+- [R Shiny Interactive Web App]({{site.url}}/rshiny/asxp20)
 
 # Queensland local government areas view
 
