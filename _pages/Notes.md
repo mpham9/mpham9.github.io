@@ -179,3 +179,36 @@ def log_deriv(x,e):
 
 y = log_deriv(-1,0)
 ```
+
+Array creation
+```Python
+import numpy as np
+# array of zeros
+np.zeros(5)
+np.zeros((2,3))
+
+# diagonal matrix
+np.eye(4)
+
+# array with ones
+np.ones((5,2))
+
+# array filled with specified value
+np.full((4,3), True)
+
+# empty array
+np.empty((4,))
+
+# equally spaced grid
+np.linspace(1.0,8.0,5)
+```
+
+Copy to new variables (otherwise new variables point to the same Python object)
+```Python
+import numpy as np
+a = np.array([[1,2],[3,4]])
+b = np.zeros(a.shape)
+b[:,:] = a
+# or alternatively
+np.copyto(b,a)
+```
