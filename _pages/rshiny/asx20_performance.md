@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /rshiny/asxp20/
+permalink: /rshiny/asx20_performance/
 published: true
 ---
 
