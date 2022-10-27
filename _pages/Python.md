@@ -111,7 +111,7 @@ df = df.dropna(axis=0,how='any')
 
 Filter
 ```Python
-df[df.StudyHours > mean_study]
+df[df.StudyHours > mean_study]['StudyHours']
 ```
 
 Combine columns
@@ -140,6 +140,11 @@ plt.xticks(rotation=90) # vertical texts on x axis
 plt.show()
 ```
 
+Column chart
+```Python
+df.plot(x='Name',y=['Grade','StudyHours'],kind='bar',figsize=(8,5))
+```
+
 Subplot
 ```Python
 fig, ax = plt.subplots(1,2,figsize=(10,4))
@@ -164,4 +169,9 @@ Plot density
 fig = plt.figure(figsize=(10,4))
 df.plt.density()
 plt.show()
+```
+
+Quantile
+```Python
+q01 = df.StudyHours.quantile(0.01)
 ```
