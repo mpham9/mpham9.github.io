@@ -1,4 +1,8 @@
 
+Pandas axis:
+- '0' : index or row
+- '1' : column
+
 Insert column into Pandas dataframe
 ```Python
 df.insert(loc: 'int', column: 'str|number|hashable', value: 'scalar|serires|array-like', allow_duplicates: 'bool'=False)
@@ -72,7 +76,92 @@ b[:,:] = a
 np.copyto(b,a)
 ```
 
-Get data for index value 5
-```
+Get data 
+```Python
+# for index value 50
 df.loc[5]
+# for index values from 0 to 5
+df.loc[0:5]
+# for rows in positions in range 0 to 5
+df.iloc[0:5]
+# for row 0, columns in positions 1 and 2
+df.iloc[0,[1,2]]
+# 
+df.loc[0,'Grade']
+#
+df.loc[df['Name']=='Aisha']
+df[df['Name']=='Aisha']
+# 
+df.query('Name=="Aisha"')
+# 
+df[df.Name == 'Aisha']
+```
+
+Check null
+```Python
+df.isnull()
+df[df.isnull().any(axis=1)]
+```
+
+Drop na
+```Python
+# axis = 0: Drop rows having na values, axis = 1: drop columns
+df = df.dropna(axis=0,how='any')
+```
+
+Filter
+```Python
+df[df.StudyHours > mean_study]
+```
+
+Combine columns
+```Python
+a = pandas.concat([b,c],axis=1)
+```
+
+Group by
+```Python
+print(df.groupby(df.Pass).Name.count())
+print(df.groupby(df.Pass)['StudyHours','Grade'].mean())
+```
+
+Sort
+```Python
+df = df.sort_values('Grade',ascending=False)
+```
+
+Bar plot
+```Python
+from matplotlib import pyplot as plt
+plt.bar(x=df.Name, height=df.Grade)
+plt.title('Student Grades')
+plt.xlabel('Student')
+plt.xticks(rotation=90) # vertical texts on x axis
+plt.show()
+```
+
+Subplot
+```Python
+fig, ax = plt.subplots(1,2,figsize=(10,4))
+ax[0].bar(x=df.Name,height=df.Grade,color='orange')
+ax[0].set_title('Grades')
+ax[0].set_xticklabels(df.Name,rotation=90)
+pass_count = df['Pass'].value_counts()
+ax[1].pie(pass_count,labels=pass_counts)
+ax[1].legend(pass_counts.keys().tolist())
+fig.suptitle('Student Data')
+fig.show()
+```
+
+Add vertical line
+```Python
+plt.hist(var)
+plt.axvline(x=med_val, color='red',linestyle='dashed',linewidth=2)
+```
+
+Plot density
+```Python
+fig = plt.figure(figsize=(10,4))
+df.plt.density()
+plt.show()
 ```
