@@ -175,3 +175,16 @@ Quantile
 ```Python
 q01 = df.StudyHours.quantile(0.01)
 ```
+
+Get day
+```Python
+df['day'] = pandas.DatetimeIndex(df['date']).day
+```
+
+Train model
+```Python
+X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split.train_test_split(X,y,test_size=0.3)
+model = sklearn.linear_model.LinearRegression.LinearRegression().fit(X_train,y_train)
+prediction = model.predict(X_test)
+
+```
