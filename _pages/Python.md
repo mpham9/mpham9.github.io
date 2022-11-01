@@ -95,6 +95,8 @@ df[df['Name']=='Aisha']
 df.query('Name=="Aisha"')
 # 
 df[df.Name == 'Aisha']
+#
+df[df.columns[0:6]]
 ```
 
 Check null
