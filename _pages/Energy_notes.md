@@ -15,3 +15,7 @@ where
 $h$: potential energy input
 
 $e$: electrical energy output
+
+# Statistics
+
+Average home uses ~4.3MW a year
