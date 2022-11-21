@@ -26,4 +26,5 @@ $e$: electrical energy output
 # Statistics
 
 Average home uses ~4.3MW a year
-1W = 1 J/s = 1Nm/s = 1kg m^2 s^{-3+ = 1V \times 1A = 1V^2 /\Omega = 1A^2\Omega
+
+$1W = 1 J/s = 1Nm/s = 1kg m^2 s^{-3} = 1V \times 1A = 1V^2 /\Omega = 1A^2\Omega$
