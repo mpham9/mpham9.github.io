@@ -23,8 +23,14 @@ $h$: potential energy input
 
 $e$: electrical energy output
 
+
 # Statistics
 
 Average home uses ~4.3MW a year
 
 $1W = 1 J/s = 1Nm/s = 1kg m^2 s^{-3} = 1V \times 1A = 1V^2 /\Omega = 1A^2\Omega$
+
+Convert fuel price GJ to MWh: Heat rate * price
+- Coal-fired: $9 GJ/MWh \times 10 \\$/GJ = 90 \\$/MWh$
+- OCGT: $12 GJ/MWh \times 20 \\$/GJ = 240 \\$/MWh$
+
