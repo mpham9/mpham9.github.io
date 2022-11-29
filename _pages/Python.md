@@ -1,3 +1,31 @@
+# Setup
+
+Set up virtual environment
+```
+python -m venv path\to\virtualenvironment
+```
+Activate virtual environment
+```
+.\env\Scripts\activate
+where python
+```
+Leaving virtual environment
+```
+deactivate
+```
+Install packages
+```
+python -m pip install plotly
+python -m pip install requests==2.18.4
+```
+Freeze dependencies
+```
+python -m pip freeze
+```
+
+
+
+# Data wrangling
 
 Pandas axis:
 - '0' : index or row
