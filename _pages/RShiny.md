@@ -16,8 +16,3 @@ Employ an iterative mathematical optimization algorithm to evaluate performance 
 Plot Queensland's local government areas in an interactive map with some statistics.
 - [R Shiny Interactive Web App]({{site.url}}/rshiny/qld-lga)
 
-# ASX stock price view
-
-View prices of stocks in ASX 200.
-- [R Shiny Interactive Web App]({{site.url}}/rshiny/asx-price)
-
