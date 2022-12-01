@@ -1,3 +1,10 @@
+---
+layout: page
+title: "My notes"
+permalink: /notes/
+published: false
+---
+
 # Setup
 
 Set up virtual environment
