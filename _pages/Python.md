@@ -223,5 +223,16 @@ Train model
 X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split.train_test_split(X,y,test_size=0.3)
 model = sklearn.linear_model.LinearRegression.LinearRegression().fit(X_train,y_train)
 prediction = model.predict(X_test)
+```
 
+Subtract all rows of data frame by a row
+```Python
+df.sub(df.iloc[1],axis=1)
+df.sub(df["col2"],axis=0)
+```
+
+Plotly in Spyder
+```Python
+import plotly.io as pio
+pio.renderers.default='browser'
 ```
