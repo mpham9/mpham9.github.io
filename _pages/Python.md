@@ -160,11 +160,13 @@ Group by
 ```Python
 print(df.groupby(df.Pass).Name.count())
 print(df.groupby(df.Pass)['StudyHours','Grade'].mean())
+a = df.groupby(['Year','Month','Day']).sum(numeric_only=True)
 ```
 
 Sort
 ```Python
 df = df.sort_values('Grade',ascending=False)
+df = df.sort_values(by = ['Year','Month','Day'])
 ```
 
 Bar plot
@@ -235,4 +237,15 @@ Plotly in Spyder
 ```Python
 import plotly.io as pio
 pio.renderers.default='browser'
+```
+
+Moving average, rolling sum
+```Python
+df['SMA14'] = df['daily_rating'].rolling(window=14).mean()
+df = df.dropna(axis=0)
+```
+
+Filter min max
+```Python
+df[df.rating == df.rating.min()]
 ```
