@@ -249,3 +249,20 @@ Filter min max
 ```Python
 df[df.rating == df.rating.min()]
 ```
+
+Apply conditional new column
+```Python
+df['fy'] = df.apply(lambda x: x['Year'] if x['Month'] < 7 else x['Year'] + 1, axis = 1)
+```
+
+Left join
+```Python
+res = pandas.merge(df1,df2,how='left',left_on=['col1','col2'],right_on=['colA','colB'])
+```
+
+weighted average
+```Python
+res['prod'] = res['weights'] * res['values']
+res = df.groupby('fy').sum()
+res['weighted'] = res['prod'] / res['weights']
+```
