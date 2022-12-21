@@ -135,3 +135,18 @@ for (i in 1:length(n)){
   image_write(tmp,paste0(i,".pdf"),format="pdf")
 }
 ```
+
+Reshape data wide and long
+```R
+library(tidyr)
+# wide to long
+df = df %>% gather(key="Generator",value="Value", col_list[3:10])
+# long to wide
+df = df %>% gather(Property, Value)
+```
+
+Read excel data as datetime
+```R
+library(datetimeutils)
+df$Datetime = convert_date(df$Datetime,type="Excel",fraction=TRUE)
+```
