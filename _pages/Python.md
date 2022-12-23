@@ -266,3 +266,51 @@ res['prod'] = res['weights'] * res['values']
 res = df.groupby('fy').sum()
 res['weighted'] = res['prod'] / res['weights']
 ```
+
+String format
+```Python
+#{0:.2f} means first argument as floating-point number with 2 decimal places
+#{1:s} means second argument as string
+#{2:d} means third argument as exact integer
+
+"{0:.2f} {1:s} are worth US${2:d}".format(88,"Argentine Pesos",1)
+
+amount = 10
+rate = 88
+currency = "Pesos"
+res = f"{amount} {currency} is worth US${amount /rate:.2f}"
+```
+
+Use `r` for no escape character
+```Python
+s = r"this\has\no\special\characters"
+```
+
+if,elif,else
+```Python
+if x<0:
+    # do something
+elif x==0 or c>d:
+    # do something
+elif 0<x<5:
+    # do something
+else:
+    # do something
+```
+
+for loop, continue, break
+continue: skip the remainder of the block, advancing a for loop to the next iteration
+break: terminate the innermost for loop, any outer for loops will continue to run
+```Python
+for value in collection:
+    if value is None:
+        continue
+    total += value
+    
+for i in range(3):
+    for j in range(5):
+        if j>i:
+            break
+        print((i,j))
+```
+
