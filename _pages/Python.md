@@ -72,10 +72,27 @@ Exception handling
 def log_deriv(x,e):
   try:
     return (math.log(x+e)-math.log(x))/e
-  except ValueError:
+  except (ValueError, TypeError):
     return None
-
 y = log_deriv(-1,0)
+
+f = open(path, mode="w")
+try:
+    write_to_file(f)
+finally:
+    f.close() # always execute regardless of whether or not the try block succeeds
+    
+f = open(path,mode="w")
+try:
+    write_to_file(f)
+except:
+    print("Failed")
+else:
+    print("Succeeded") # executes only if the try block succeeds using else
+finally:
+    f.close()
+    
+    
 ```
 
 Array creation
