@@ -314,3 +314,19 @@ for i in range(3):
         print((i,j))
 ```
 
+Long to wide
+```Python
+df = df.pivot(index=["date","time"],columns="variable",values="value").reset_index()
+
+df = df.set_index(["date","time"]).unstack(level="item")
+df = df.unstack() # inner most level is unstack first
+df = df.unstack(level=0)
+df = df.unstack(level="state")
+```
+
+Wide to long
+```Python
+df = df.stack().reset_index().rename(columns={0:"value"})
+
+df = df.melt(id_vars="key",value_vars=["A","B"])
+```
