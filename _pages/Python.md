@@ -90,42 +90,7 @@ except:
 else:
     print("Succeeded") # executes only if the try block succeeds using else
 finally:
-    f.close()
-    
-    
-```
-
-Array creation
-```Python
-import numpy as np
-# array of zeros
-np.zeros(5)
-np.zeros((2,3))
-
-# diagonal matrix
-np.eye(4)
-
-# array with ones
-np.ones((5,2))
-
-# array filled with specified value
-np.full((4,3), True)
-
-# empty array
-np.empty((4,))
-
-# equally spaced grid
-np.linspace(1.0,8.0,5)
-```
-
-Copy to new variables (otherwise new variables point to the same Python object)
-```Python
-import numpy as np
-a = np.array([[1,2],[3,4]])
-b = np.zeros(a.shape)
-b[:,:] = a
-# or alternatively
-np.copyto(b,a)
+    f.close()    
 ```
 
 Get data 
@@ -346,4 +311,48 @@ Wide to long
 df = df.stack().reset_index().rename(columns={0:"value"})
 
 df = df.melt(id_vars="key",value_vars=["A","B"])
+```
+
+# Numpy
+
+Array creation
+```Python
+import numpy as np
+# array of zeros
+np.zeros(5)
+np.zeros((2,3))
+
+# diagonal matrix
+np.eye(4)
+
+# array with ones
+np.ones((5,2))
+
+# array filled with specified value
+np.full((4,3), True)
+
+# empty array
+np.empty((4,))
+
+# equally spaced grid
+np.linspace(1.0,8.0,5)
+```
+
+Copy to new variables (otherwise new variables point to the same Python object)
+```Python
+import numpy as np
+a = np.array([[1,2],[3,4]])
+b = np.zeros(a.shape)
+b[:,:] = a
+# or alternatively
+np.copyto(b,a)
+a = arr[5:8].copy()
+```
+
+Slicing
+```Python
+a[1][2]
+a[1,2]
+a[:2,1:]
+a[1,:2] # second row, first two columns
 ```
