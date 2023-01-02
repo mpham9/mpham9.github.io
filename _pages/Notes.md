@@ -142,7 +142,7 @@ library(tidyr)
 # wide to long
 df = df %>% gather(key="Generator",value="Value", col_list[3:10])
 # long to wide
-df = df %>% gather(Property, Value)
+df = df %>% spread(Property, Value)
 ```
 
 Read excel data as datetime
