@@ -356,3 +356,31 @@ a[1,2]
 a[:2,1:]
 a[1,:2] # second row, first two columns
 ```
+
+Linear algebra
+```Python
+# matrix multiplication
+arr = numpy.array([[0,1,0],[1,2,-2]])
+numpy.dot(arr.T, arr) # transpose matrix
+arr.T @ arr
+
+from numpy.linalg import inv, qr
+inv(mat) # inverse matrix
+X.T.dot(X) # dot product of X with its transpose
+
+# commonly used numpy.linalg functions
+diag 
+trace # sum of diagonal elements
+det # matrix determinant
+eig # eigenvalues and eigenvectors of a square matrix
+qr # QR decomposition
+svd # singular value decomposition SVD
+solve # solve linear system Ax = b where A is a square matrix
+lstsq # least square solution to Ax=b
+```
+
+Useful 
+```Python
+numpy.where( a > 0, 1, -1)
+numpy
+```
