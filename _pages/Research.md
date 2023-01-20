@@ -8,7 +8,7 @@ permalink: /research/
 
 *Statistical Inference for Aggregation of Malmquist Productivity Indices* \
 (with Leopold Simar, Valentin Zelenyuk) \
-Accepted for publication at Operations Research
+Operations Research, 2023
 
 *Weak disposability in nonparametric production analysis: A new taxonomy of reference technology sets* \
 (with Valentin Zelenyuk) \
