@@ -4,7 +4,7 @@ title: "Research"
 permalink: /research/
 ---
 
-# Publications
+# Journal articles
 
 *Statistical Inference for Aggregation of Malmquist Productivity Indices* \
 (with Leopold Simar, Valentin Zelenyuk) \
@@ -17,3 +17,8 @@ European Journal of Operational Research, 2019
 *Slack-based directional distance function in the presence of bad outputs: theory and application to Vietnamese banking* \
 (with Valentin Zelenyuk) \
 Empirical Economics, 2018
+
+# Technical report
+
+*Technological change in Vietnam: the contribution of technology to economic growth*\
+CSIRO Data61 Australia, 2020
